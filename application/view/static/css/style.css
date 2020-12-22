@@ -102,3 +102,87 @@ main form button{
 .form-radio-group label{
     margin-right: 40px;
 }
+
+.produtos-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.produtos-titulo{
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    grid-gap: 20px;
+    width: 930px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produtos-titulo:before,
+.produtos-titulo:after {
+    content: '';
+    border-top: 1px solid #707070;
+}
+
+.produto{
+    display: flex;
+    max-width: 920px;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 50px;
+    flex-flow: row wrap;
+}
+
+.produto-card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.produto-card img{
+    border: 1px solid #707070;
+    height: 150px;
+    margin-bottom: 14px;
+}
+
+.produto-nome{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.produto-descricao{
+    font-size: 12px;
+    height: 60px;
+}
+
+.produto-preco-anterior{
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.produto-preco{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.produto-meio-pagamento{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.produto .produto-card button{
+    font-size: 16px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: 5px 0;
+    background-color: white;
+    display: block;
+    width: -webkit-fill-available;
+}
