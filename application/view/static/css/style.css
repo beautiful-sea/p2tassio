@@ -242,3 +242,15 @@ main form button{
     width: 200px;
     background-color: white;
 }
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 150px 0 85px 0;
+    background-color: #707070;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+}
+
+footer p{
+    color: white;
+}
