@@ -1,7 +1,7 @@
 class Produto:
     def __init__ (self, id, imagem, nome, descricao, preco_anterior, preco, qtd_parcelas, valor_parcela):
         self._id = id
-        self.imagem = imagem
+        self._imagem = imagem
         self._nome = nome
         self._descricao = descricao
         self._preco_anterior = preco_anterior

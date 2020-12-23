@@ -1,10 +1,10 @@
 import json
-from application.model.entity.Produtos import Produto
+from application.model.entity.Produto import Produto
 
 with open ('application\\products.json') as product_file:
         product_list = json.load(product_file)
 
-class produtoDAO:
+class ProdutoDAO:
     def __init__(self):
         self._produtos = []
 

@@ -57,17 +57,19 @@
     <section class="produtos-section">
         <p class="produtos-titulo">Sua seleção especial</p>
         <div class="produto">
+        {%for produto in produtos%}
             <div class="produto-card">
-                <img  src=''>
+                <img  src="{{'http:{link}'.format(link = produto.get_imagem())}}">
                 <div>
-                    <p class="produto-nome"></p>
-                    <p class="produto-descricao"></p>
-                    <p class="produto-preco-anterior">De: </p>
-                    <p class="produto-preco">Por: </p>
-                    <p class="produto-meio-pagamento">ou x de r$</p>
+                    <p class="produto-nome">{{produto.get_nome()}}</p>
+                    <p class="produto-descricao">{{produto.get_descricao()}}</p>
+                    <p class="produto-preco-anterior">De: {{'R${:,.2f}'.format(produto.get_preco_anterior())}}</p>
+                    <p class="produto-preco">Por: {{'R${:,.2f}'.format(produto.get_preco())}}</p>
+                    <p class="produto-meio-pagamento">ou {{produto.get_qtd_parcelas()}}x de {{'R${:,.2f}'.format(produto.get_valor_parcela())}}</p>
                     <button>Comprar</button>
                 </div>
             </div>
+        {%endfor%}
         </div>
     </section>
 
