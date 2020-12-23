@@ -1,7 +1,6 @@
 from application import app
 from flask import render_template, request
 import json
-from application.model.entity.Produto import Produto
 from application.model.dao.ProdutoDAO import ProdutoDAO
 
 @app.route("/")

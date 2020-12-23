@@ -8,7 +8,7 @@
 :root {
     --titulos-header: white;
 }
-
+/* HEADER */
 header{
     text-align: center;
     margin-top: 20px;
@@ -53,6 +53,7 @@ header button{
     border-radius: 4%;
 }
 
+/* SEÇÃO PRINCIPAL COM TEXTO E FORMULÁRIO */
 main {
     display: flex;
     justify-content: center;
@@ -103,6 +104,7 @@ main form button{
     margin-right: 40px;
 }
 
+/* SEÇÃO DE PRODUTOS */
 .produtos-section{
     display: flex;
     flex-direction: column;
@@ -187,6 +189,7 @@ main form button{
     width: -webkit-fill-available;
 }
 
+/* SEÇÃO DE COMPARTILHAR NOVIDADES */
 .novidades-section{
     display: flex;
     flex-direction: column;
@@ -242,7 +245,7 @@ main form button{
     width: 200px;
     background-color: white;
 }
-
+/* FOOTER */
 footer{
     text-align: center;
     font-size: 12px;
@@ -255,6 +258,7 @@ footer p{
     color: white;
 }
 
+/* RESPONSIVIDADE */
 @media screen and (max-width: 768px) {
     main ,.produto,  .novidades-section form{
         display: block;

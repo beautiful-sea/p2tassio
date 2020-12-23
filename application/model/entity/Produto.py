@@ -9,7 +9,6 @@ class Produto:
         self._qtd_parcelas = qtd_parcelas
         self._valor_parcela = valor_parcela
 
-    
     def get_id (self):
         return self._id
 
